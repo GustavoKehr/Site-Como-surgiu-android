@@ -1,0 +1,258 @@
+/* Para utilizar acentos, etc... */
+@charset "UTF-8";
+
+/* Importação de fontes googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Fonte Android Baixada */
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* Paletas do projeto
+    #c5ebd6 
+    #83e1ad 
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #063d1e
+*/
+
+/* Variaveis */
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #8ff1bb;
+    --cor2: #7fd6a6;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+
+}
+
+/* Configuração global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Corpo do site */
+body {
+    background-color: var(--cor0);
+    margin: 0;
+    font-family: var(--fonte-padrao);
+    
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+
+div > iframe {
+
+    width: 600px;
+}
+
+
+/* Cabecalho */
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+    padding: 5px;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 90px;
+}
+
+/* H1 do Cabecalho */
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* P do Cabecalho */
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* Navegacao (Menu) */
+nav {
+    background-color: var(--cor6);
+    padding: 2px 5px 15px 0px ;
+}
+
+/* a do nav (menu) */
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(151, 248, 61);
+    padding: 5px;
+    margin-left: 30px;
+    text-shadow: 0px 7px 9px rgba(0, 0, 0, 0.7);
+    transition-duration: 0.5s;
+
+}
+
+/* hover do a do nav (menu) */
+nav > a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.521);
+    border-radius: 5px;
+}
+
+/* Principal */
+main {
+    background-color: white;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+}
+
+/* paragrafos */
+main p {
+    text-indent: 1.2em;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+/* textos em negrito */
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    background-color: var(--cor1);
+    color: var(--cor6);
+    padding: 2px 6px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+/* h1 do artigo do principal */
+main > article > h1 {
+    color: var(--cor6);
+    font-family: var(--fonte-android);
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+/* h2 do artigo do principal */
+main > article > h2 {
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor5);
+    font-size: 1.3em;
+    text-indent: 1em;
+    font-weight: normal;
+}
+
+main > article > a {
+    background-color: var(--cor2);
+}
+
+/* imagem do principal */
+main > article > img {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor6);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* classe pequena da imagem do picture do artigo do principal */
+main > article > picture > img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main > article > p.final {
+    margin-top: 10px;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px  rgba(0, 0, 0, 0.267);
+}
+
+aside > h3 {
+    background-color: var(--cor5);
+    padding: 10px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > p {
+    padding: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor6);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Link do rodapé */
+footer > p > a {
+    color: palevioletred ;
+    text-decoration: none;
+}
+
+/* Hover do rodapé */
+footer > p > a:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+    transition: 0.5s;
+    border-radius: 5px;
+}
