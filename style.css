@@ -156,8 +156,8 @@ main a:hover {
     color: var(--cor4);
 }
 
-main > picture > img.dandroid {
-    max-width: 500px;
+main > picture > img.dandroid-pq {
+    max-width: 400px;
     min-width: 280px;
 }
 
