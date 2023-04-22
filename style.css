@@ -143,6 +143,7 @@ main strong {
     padding: 2px 6px;
 }
 
+/* links do principal */
 main a {
     background-color: var(--cor1);
     color: var(--cor6);
@@ -151,14 +152,14 @@ main a {
     text-decoration: none;
 }
 
+
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
 }
 
 main > picture > img.dandroid-pq {
-    max-width: 400px;
-    min-width: 280px;
+    width: 50%;
 }
 
 /* h1 do artigo do principal */
